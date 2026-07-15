@@ -1,0 +1,16 @@
+# Vendored from https://github.com/rpapub/uipath-gitignore/blob/main/uipath-legacy.gitignore
+# Update by re-fetching from that repo, not by hand-editing here.
+#In older versions of studio, local entity dlls are stored in a different directory, hence the below code
+#Ignore .local files without ignoring dataservice object .dlls
+.local/
+!.local/**/*.dll
+#Ignore Debug And Design-Time Settings, Don't Ignore Release Settings
+.settings/Debug/
+.settings/Design/
+#.tmh folder is poorly documented, so not ignoring it currently.
+#.tmh/
+#(Optional) prevent scratch workflows from being commmited, allowings devs to keep local copies
+**/*[Ss]cratch*.xaml
+*[Ss]cratch*.xaml
+#Ignore temporary files from unsaved .xaml files
+~*
